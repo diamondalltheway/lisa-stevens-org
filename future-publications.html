@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+  <title>Lisa Stevens | Welcome!</title>
+</head>
+<body>
+  <div class="isolate bg-fuchsia-100" x-data="{isOpen : false}">
+    <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+      <svg  class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]" viewBox="0 0 1155 678" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="url(#45de2b6b-92d5-4d68-a6a0-9b9b2abad533)" fill-opacity=".3" d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+        <defs>
+          <linearGradient id="45de2b6b-92d5-4d68-a6a0-9b9b2abad533" x1="1155.49" x2="-78.208" y1=".177" y2="474.645" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#9089FC"></stop>
+            <stop offset="1" stop-color="#FF80B5"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="px-6 pt-6 lg:px-8">
+      <div>
+        <nav class="flex h-9 items-center justify-between" aria-label="Global">
+          <div class="flex lg:min-w-0 lg:flex-1" aria-label="Global">
+            <a href="/" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=pink&shade=600" alt="">
+            </a>
+          </div>
+          <div class="flex lg:hidden
+          
+          ">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Open main menu</span>
+              <!-- Heroicon name: outline/bars-3 -->
+              <svg @click="isOpen = !isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
+            <a href="/about.html" class="font-semibold text-gray-900 hover:text-gray-900">About</a>
+
+            <a href="/future-publications.html" class="font-semibold text-gray-900 hover:text-gray-900">Future Publications</a>
+
+            <a href="/disclaimer.html" class="font-semibold text-gray-900 hover:text-gray-900">Disclaimer</a>
+          </div>
+          <div class="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
+            <!-- End section -->
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div role="dialog" aria-modal="true" x-show="isOpen">
+          <div focus="true" class="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
+            <div class="flex h-9 items-center justify-between">
+              <div class="flex">
+                <a href="/" class="-m-1.5 p-1.5">
+                  <span class="sr-only">Your Company</span>
+                  <img class="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=pink&shade=600" alt="">
+                </a>
+              </div>
+              <div class="flex">
+                <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                  <span class="sr-only">Close menu</span>
+                  <!-- Heroicon name: outline/x-mark -->
+                  <svg @click="isOpen = !isOpen" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                  <a href="/about.html" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">About</a>
+
+                  <a href="/future-publications.html" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Future Publications</a>
+
+                  <a href="/disclaimer.html" class="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10">Disclaimer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <h1 class="text-4xl text-center font-bold my-16">Future Publications</h1>
+
+      <div class="flex">
+        <div class="w-1/3 lg:hidden"></div>
+        <div class="w-full lg:w-2/3 mx-auto">
+          <img src="/images/sevilla.webp" class="mx-auto w-full my-10">
+          <p class="">
+            <span class="text-2xl font-bold">1-  COMING SOON – MARCH 2023 – Do you want to travel to Spain?</span>
+            <br>
+            <br>
+            
+            Currently writing a book on how to plan a successful trip to Spain – focusing on Andalusia and Costa del Sol.
+            
+            This book is a friendly guide customizing your vacation. From creating an exciting itinerary to reserving seats on the Ave train (to minimize travel time) to booking a locally sourced tour - this is your blueprint.
+            
+            Why did I choose to write this book?
+            For many weeks, I tried to hire a travel agent - who had firsthand experience in Spain post-COVID.  Not one candidate was a good match for my travel plans, so I decided to plan it by myself.  It took months.  So, I decided to write a quick and easy book for all future vacationers.  This little gem will save readers weeks of frustration and countless hours of tedious research.
+          </p>
+        </div>
+        <div class="w-1/3 lg:hidden"></div>
+      </div>
+      
+      <br>
+      <br>
+    
+      <div class="flex">
+        <div class="w-1/3 lg:hidden"></div>
+        <div class="w-full lg:w-2/3 mx-auto">
+          <img src="/images/gumbo.webp" class="mx-auto my-10">
+          <p class="">
+            <span class="text-2xl font-bold">2-  COMING SOON – MARCH 2023 – Writing Your College Admission Essay is as easy as cooking GUMBO!</span>
+            <br>
+            <br>
+             
+            Final edit stage.
+            
+            This book is a fun way to address an extremely serious topic – the college admission essay. 
+            
+            Most high school seniors feel the enormous pressure of producing a ‘publish-worthy’ essay. Sometimes the college-bound student needs a lighter lens to view the task at hand. Because this book is written in a recipe format, it is both entertaining and easy-to-follow.
+            
+            Why did I write this book? 
+            It was August 2019.  A stressed parent hired me as a college consultant to help their struggling senior.  She was having trouble writing even an early rough draft of her application essay.  So, just for her I typed out a manuscript using my favorite Louisiana Gumbo recipe as a format. Even though the student had never tasted gumbo (much less cooked the dish in real life), it was the key that unlocked the writer’s block.
+            
+      
+      
+          </p>
+        </div>
+        <div class="w-1/3 lg:hidden"></div>
+      </div>
+    </main>
+  </div>
+  <footer class="bg-fuchsia-100">
+    <div class="mx-auto max-w-7xl py-12 px-6 md:flex md:items-center md:justify-between lg:px-8">
+      <div class="mt-8 md:order-1 md:mt-0">
+        <p class="text-center text-xs leading-5 text-gray-500">&copy; 2023 Lisa Stevens, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
